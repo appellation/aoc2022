@@ -1,5 +1,7 @@
 # Day 3
 
+https://adventofcode.com/2022/day/3
+
 I feel like my usage of MapSet could be cleaner, but otherwise this solution seems pretty optimal.
 
 We could use bitfields here to optimize the set intersection, but for sets of this size I don't
