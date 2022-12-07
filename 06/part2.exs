@@ -1,7 +1,6 @@
-idx =
-  File.read!("06/input.txt")
-  |> String.to_charlist()
-  |> Enum.chunk_every(14, 1, [])
-  |> Enum.find_index(fn chars -> Enum.uniq(chars) == chars end)
-
-IO.puts(idx + 14)
+File.read!("06/input.txt")
+|> String.to_charlist()
+|> Enum.chunk_every(14, 1, [])
+|> Enum.find_index(fn chars -> Enum.uniq(chars) == chars end)
+|> then(&(&1 + 14))
+|> IO.puts()
